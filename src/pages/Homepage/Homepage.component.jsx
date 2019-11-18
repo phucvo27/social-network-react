@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from '../../components/Header/Header.component'
-
+import { HomepageWrapper , LeftContent , CenterContent, RightContent} from './Homepage.styled';
 const HomePage = ()=>{
     return (
-        <div>
-            <Header />
-        </div>
+        <HomepageWrapper>
+            <LeftContent></LeftContent>
+            <CenterContent></CenterContent>
+            <RightContent></RightContent>
+        </HomepageWrapper>
     )
 }
 
