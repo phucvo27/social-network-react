@@ -16,8 +16,8 @@ const Card = ({ listImage=[] }) => {
             </CardTitle>
             <CardBody>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam illo magni iusto id cum nesciunt laboriosam omnis labore, accusamus quasi illum ipsum rerum a? Hic nulla iste quasi perferendis qui.</p>
-                { listImage.length > 0 && listImage.map(image => {
-                    return (<img src={image} alt='post-content' />)
+                { listImage.length > 0 && listImage.map((image, idx) => {
+                    return (<img key={idx} src={image} alt='post-content' />)
                 })}
             </CardBody>
             <CardFooter>

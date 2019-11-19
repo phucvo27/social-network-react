@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 
-export const HomepageWrapper = styled.main`
+export const Grid = styled.section`
 
     display: grid;
     grid-templates-rows: 1;
     grid-template-columns: 1fr 2fr 1fr
     grid-column-gap: 2rem;
     max-width: 120rem;
-    margin: 10rem auto;
+    margin: 5rem auto;
 
-    @media screen and  (max-width: 128rem){
-        width: 110rem;
+    @media screen and  (min-width: 128rem){
+        width: 120rem;
     }
     @media screen and  (max-width: 60rem){
         margin: 10rem auto;

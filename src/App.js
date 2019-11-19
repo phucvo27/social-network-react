@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Homepage from './pages/Homepage/Homepage.component';
+import HomePage from './pages/Homepage/Homepage.component';
+import UserPage from './pages/UserPage/Userpage.component'
 import Header from './components/Header/Header.component';
 import ListFriend from './components/ListFriend/List-Friend.component';
 const App = ()=>{
@@ -10,7 +11,8 @@ const App = ()=>{
             <ListFriend />
             <BrowserRouter>
                 <Switch>
-                    <Route exact path='/' component={Homepage} />
+                    <Route exact path='/' component={HomePage} />
+                    <Route path='/user' component={UserPage} />
                     <Route render={()=>{
                         return (<p>Page not found !!</p>)
                     }} />

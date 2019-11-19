@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled.article`
 
     padding: 2.5rem;
     background-color: #fff;
     border-radius: .5rem;
     margin-bottom: 2rem;
+    border: .1rem solid #e6ecf5
 
 `
 export const CardTitle = styled.div`
