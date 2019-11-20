@@ -42,7 +42,7 @@ const Card = ({ listImage=[] }) => {
                     placeholder='Add your comment here'
                     width='100%'
                 />
-                <Button typeBtn='highlight' value='Post Comment' />
+                <Button typeBtn='highlight'>Post Comment</Button>
             </FormComment>
         </CardWrapper>
     )
