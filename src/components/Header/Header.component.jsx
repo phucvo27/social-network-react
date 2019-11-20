@@ -4,10 +4,10 @@ import FormInput from '../../components/FormInput/Form-Input.component'
 import { ReactComponent as Message} from '../../assets/SVG/Message.svg';
 import { ReactComponent as Notification} from '../../assets/SVG/Notification.svg';
 //import { ReactComponent as Message} from '../../assets/SVG/Message.svg';
-const Header = ()=>{
+const Header = ({ title })=>{
     return (
         <HeaderWrapper>
-            <HeaderTitle>Home Page</HeaderTitle>
+            <HeaderTitle>{ title }</HeaderTitle>
             <HeaderForm>
                 <FormInput 
                     type='text'
@@ -36,6 +36,11 @@ const Header = ()=>{
                     <Dropdown>
                         <DropdownTitle>Notification</DropdownTitle>
                     </Dropdown>
+                </HeaderItem>
+
+                <HeaderItem className='User'>
+                    <img src='https://html.crumina.net/html-olympus/img/author-page.jpg' alt='user-avatar'/>
+                    <p>Phuc Vo</p>
                 </HeaderItem>
             </HeaderInteract>
         </HeaderWrapper>

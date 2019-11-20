@@ -25,7 +25,7 @@ const StatusForm = () => {
                         </label>
                     </div>
                 
-                    <Button type='submit' typeBtn='highlight' value='Post Status'/>
+                    <Button type='submit' typeBtn='highlight'>Post Status</Button>
                 </StatusFormFooter>
             </form>
             </StatusFormBody>

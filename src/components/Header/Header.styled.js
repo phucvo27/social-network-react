@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.header`
     height: 7rem;
     width: 100%;
     background-color: #3f4257
-    padding: 0 15rem;
+    padding: 0 10rem 0 10rem;;
     display: flex;
     justify-content: flex-start;
     align-items: center
@@ -34,7 +34,7 @@ export const HeaderInteract = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 15rem;
+    width: 30rem;
 `
 export const HeaderItem = styled.div`
 
@@ -62,6 +62,23 @@ export const HeaderItem = styled.div`
         top: -1rem;
         right: -1rem;
 
+    }
+    &.User {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &.User > img {
+        display: inline-block;
+        height: 3.2rem;
+        width: 3.2rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    &.User > p {
+        font-size: 1.4rem;
+        color: #fff;
     }
 
 `

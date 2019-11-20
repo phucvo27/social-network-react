@@ -28,7 +28,7 @@ export const Input = styled.input`
     background-color: #fff;
 
     ::placeholder{
-        color : #fff;
+        color : #333;
     }
     :focus{
         outline: none;

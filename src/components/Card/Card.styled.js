@@ -27,15 +27,17 @@ export const CardAvatar = styled.img`
 `
 export const CardAuthor = styled.div`
 
-    font-size: 1.1rem;
+    
     display: inline-block;
     margin-right: auto;
     > h1 {
         font-weight: 700;
-        color: #515365
+        color: #515365;
+        font-size: 1.4rem;
     }
     > p {
-        color: #888da8
+        color: #888da8;
+        font-size: 1rem;
     }
 `
 export const CardBody = styled.div`
@@ -48,6 +50,7 @@ export const CardBody = styled.div`
     > img {
         width: 100%;
         margin: 1.4rem 0rem;
+        border-radius: .5rem;
     }
 `
 
