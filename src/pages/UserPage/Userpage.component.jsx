@@ -4,6 +4,7 @@ import { Grid, LeftContent, CenterContent, RightContent } from '../../components
 
 import Card from '../../components/Card/Card.component';
 import image from '../../assets/test-image.jpg';
+
 class UserPage extends React.Component {
 
     render(){
@@ -25,9 +26,8 @@ class UserPage extends React.Component {
                     </HeaderThumb>
                     <UserProfileSection>
                         <p>Timeline</p>
-                        <p>About</p>
-                        <p>Friend</p>
-                        <p>Image</p>
+                        <p>Friends</p>
+                        <p>Images</p>
                     </UserProfileSection>
                 </UserHeader>
                 <Grid>
@@ -55,7 +55,6 @@ class UserPage extends React.Component {
                     </Content>
                 </LeftContent>
                 <CenterContent>
-                    
                     <Card listImage={['https://html.crumina.net/html-olympus/img/post-photo6.jpg']}/>
                     <Card />
                     <Card listImage={[image]} />
@@ -83,4 +82,8 @@ class UserPage extends React.Component {
 }
 
 export default UserPage;
-//
+/**
+
+
+
+ */
