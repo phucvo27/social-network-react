@@ -4,12 +4,10 @@ import { Grid, LeftContent, CenterContent, RightContent } from '../../components
 
 import Card from '../../components/Card/Card.component';
 import image from '../../assets/test-image.jpg';
-
 class UserPage extends React.Component {
 
     render(){
         return (
-
             <UserWrapper>
                 <UserHeader>
                     <HeaderThumb>

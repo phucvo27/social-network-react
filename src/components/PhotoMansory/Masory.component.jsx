@@ -1,48 +1,104 @@
 import React from 'react';
-import Masonry from 'masonry-layout';
-import { Wrapper } from './Masonry.styled'
+import { Masonry , MansoryItem } from './Masonry.styled'
 class MansoryLayout extends React.Component {
 
-    componentDidMount(){
-        const elem = document.querySelector('.grid');
-        const msnry = new Masonry( elem, {
-        // options
-        itemSelector: '.grid-item',
-        columnWidth: 160,
-        percentPosition: true
-        });
-    }
+    
     render(){
 
         return(
-            <Wrapper>
-            <div className="grid">
-                <div className="grid-item"></div>
-                <div className="grid-item grid-item--width2 grid-item--height2"></div>
-                <div className="grid-item grid-item--height3"></div>
-                <div className="grid-item grid-item--height2"></div>
-                <div className="grid-item grid-item--width3"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item grid-item--height2"></div>
-                <div className="grid-item grid-item--width2 grid-item--height3"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item grid-item--height2"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item grid-item--width2 grid-item--height2"></div>
-                <div className="grid-item grid-item--width2"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item grid-item--height2"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item grid-item--height3"></div>
-                <div className="grid-item grid-item--height2"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item"></div>
-                <div className="grid-item grid-item--height2"></div>
-            </div>
+            <Masonry>
+            <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/325?image=100" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/450?image=200" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/280?image=300" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/540?image=400" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/380?image=500" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/300?image=600" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/400?image=700" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/300?image=800" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/280?image=900" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/480?image=925" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/550?image=950" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/600?image=1000" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/325?image=25" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/450?image=50" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/280?image=75" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/540?image=100" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/380?image=125" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/300?image=161" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/400?image=175" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/300?image=200" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/280?image=225" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/480?image=250" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/550?image=275" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/600?image=300" alt="Dummy" className="masonry-content"/>
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/325?image=13" alt="Dummy" className="masonry-content"/>
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/450?image=26" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/280?image=39" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/540?image=52" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/380?image=65" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+          <MansoryItem className="masonry-item">
+            <img src="https://picsum.photos/450/300?image=78" alt="Dummy" className="masonry-content" />
+          </MansoryItem>
+            </Masonry>
             
-            </Wrapper>
         )
     }
 }

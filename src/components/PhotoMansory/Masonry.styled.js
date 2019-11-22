@@ -1,43 +1,41 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-
-export const Wrapper = styled.section`
+export const Masonry = styled.section`
 
     width: 100%;
-    height: 100%;
+    margin: 5rem auto;
+    columns: 4;
+    column-gap: 1rem;
+    transition: all .3s;
 
+    @media screen and (max-width: 1200px) {
+            width: 90rem;
+            columns: 3;
+        
+    }
     
-.grid {
-    background: #EEE;
-    max-width: 1200px;
-  }
-  
-  /* clearfix */
-  .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  
-  /* ---- grid-item ---- */
-  
-  .grid-item {
-    width: 160px;
-    height: 120px;
-    float: left;
-    background: #D26;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
-  }
-  
-  .grid-item--width2 { width: 320px; }
-  .grid-item--width3 { width: 480px; }
-  .grid-item--width4 { width: 640px; }
-  
-  .grid-item--height2 { height: 200px; }
-  .grid-item--height3 { height: 260px; }
-  .grid-item--height4 { height: 360px; }
-  
+    @media screen and (max-width: 900px) {
+            width: 60rem;
+            columns: 2;
+        
+    }
+    
+    @media screen and (max-width: 600px) {
+            width: 40rem;
+            columns: 1;
+        
+    }
 
+`
+export const MansoryItem = styled.div`
+
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+
+    img {
+        width: 100%;
+        border-radius: .5rem;
+    }
 `
