@@ -10,6 +10,10 @@ export const ListFriendWrapper = styled.div`
     width: 7rem;
     background-color: #fff;
     z-index: 49;
+
+    @media screen and ( max-width: 600px ){
+        display: none;
+    }
 `
 export const List = styled.ul`
 

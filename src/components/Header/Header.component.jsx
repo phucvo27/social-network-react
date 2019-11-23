@@ -43,6 +43,7 @@ const Header = ({ title })=>{
                     <p>Phuc Vo</p>
                 </HeaderItem>
             </HeaderInteract>
+            
         </HeaderWrapper>
     )
 }

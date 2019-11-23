@@ -6,6 +6,23 @@ export const UserWrapper = styled.main`
     width: 130rem;
     margin: 10rem auto;
 
+    @media screen and ( min-width: 1200px ){
+        width: 130rem;
+    }
+    @media screen and ( max-width: 1200px ){
+        width: 100rem;
+        margin: 10rem auto 10rem 7rem;
+    }
+    @media screen and ( max-width: 900px ){
+        width: 60rem;
+        margin: 10rem auto;
+        margin-left: 14rem;
+    }
+    @media screen and ( max-width: 600px ){
+        width: 50rem;
+        margin: 10rem auto;
+    }
+
 `
 export const UserHeader = styled.section`
 
@@ -33,6 +50,10 @@ export const Author = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
 
+    @media screen and ( max-width: 900px){
+        bottom: -1rem;
+    }
+
 
 ` 
 export const AuthorAvatar = styled.div`
@@ -45,6 +66,14 @@ export const AuthorAvatar = styled.div`
         width: 13rem;
         border-radius: 50%;
         border: .6rem solid #fff;
+    }
+
+    @media screen and ( max-width: 900px){
+        img {
+            height: 7rem;
+            width: 7rem;
+            border: .2rem solid #fff;
+        }
     }
 `
 
@@ -66,6 +95,15 @@ export const AuthorName = styled.div`
     p {
         font-size: 1.6rem;
         color: #fff;
+    }
+    @media screen and ( max-width: 900px){
+        h1 {
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
     }
 
 `
