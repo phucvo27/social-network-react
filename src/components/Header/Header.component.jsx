@@ -1,8 +1,9 @@
 import React from 'react';
-import { HeaderWrapper, HeaderTitle, HeaderForm, HeaderInteract, HeaderItem, Dropdown, DropdownTitle } from './Header.styled';
+import { HeaderWrapper, HeaderTitle, HeaderForm, HeaderInteract, HeaderItem, Dropdown, DropdownTitle, DropdownContent } from './Header.styled';
 import FormInput from '../../components/FormInput/Form-Input.component'
 import { ReactComponent as Message} from '../../assets/SVG/Message.svg';
 import { ReactComponent as Notification} from '../../assets/SVG/Notification.svg';
+import NotificationItem from '../NotificationItem/Notification-Item.component'
 //import { ReactComponent as Message} from '../../assets/SVG/Message.svg';
 const Header = ({ title })=>{
     return (
@@ -28,6 +29,9 @@ const Header = ({ title })=>{
                     <p className='notification'>2</p>
                     <Dropdown>
                         <DropdownTitle>Notification</DropdownTitle>
+                        <DropdownContent>
+                            <NotificationItem avatar='https://html.crumina.net/html-olympus/img/author-main1.jpg' />
+                        </DropdownContent>
                     </Dropdown>
                 </HeaderItem>
                 <HeaderItem>

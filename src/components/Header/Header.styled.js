@@ -63,7 +63,6 @@ export const HeaderInteract = styled.div`
 
     @media screen and ( max-width: 600px ){
         left: 0;
-        /* display: none; */
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -137,7 +136,7 @@ export const Dropdown = styled.div`
     opacity: 0;
     visibility: hidden;
     transition: all .2s;
-
+    z-index: 10;
     ${HeaderItem}:hover & {
         opacity: 1;
         visibility: visible;
@@ -147,8 +146,13 @@ export const Dropdown = styled.div`
 
 export const DropdownTitle = styled.h4`
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
+    padding: 1.5rem .5rem;
+    border-bottom: .1rem solid #edf2f6;
+`
+export const DropdownContent = styled.div`
 
+    width: 100%;
 
 `

@@ -14,8 +14,11 @@ export const Grid = styled.section`
         margin: 10rem auto;
     }
 
-    @media screen and ( min-width: 1200px ){
+    @media screen and ( min-width: 1400px ){
         width: 130rem;
+    }
+    @media screen and ( max-width: 1300px ){
+        width: 110rem;
     }
     @media screen and ( max-width: 1200px ){
         width: 100rem;
