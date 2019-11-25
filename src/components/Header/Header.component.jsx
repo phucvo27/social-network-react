@@ -21,14 +21,19 @@ const Header = ({ title })=>{
                     <Message fill='#fff' className='icon'/>
                     <p className='notification'>2</p>
                     <Dropdown>
-                        <DropdownTitle>Messages</DropdownTitle>
+                        <DropdownTitle>
+                            <h4>Messages</h4>
+                        </DropdownTitle>
                     </Dropdown>
                 </HeaderItem>
                 <HeaderItem>
                     <Notification fill='#fff' className='icon'/>
                     <p className='notification'>2</p>
                     <Dropdown>
-                        <DropdownTitle>Notification</DropdownTitle>
+                        <DropdownTitle>
+                            <h4>Notification</h4>
+                            <p>X</p>
+                        </DropdownTitle>
                         <DropdownContent>
                             <NotificationItem avatar='https://html.crumina.net/html-olympus/img/author-main1.jpg' />
                         </DropdownContent>

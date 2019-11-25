@@ -142,14 +142,52 @@ export const Dropdown = styled.div`
         visibility: visible;
         height: 20rem;
     }
+    @media screen and ( max-width: 600px ){
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        width: 100%;
+        height: calc(100% - 7rem );
+        transform: translateX(0);
+        border-radius: 0rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s;
+        z-index: 10;
+
+        ${HeaderItem}:hover & {
+            opacity: 1;
+            visibility: visible;
+            height: calc(100% - 7rem );
+        }
+    }
 `
 
-export const DropdownTitle = styled.h4`
+export const DropdownTitle = styled.div`
 
-    font-size: 1.5rem;
-    color: #333;
+    
     padding: 1.5rem .5rem;
     border-bottom: .1rem solid #edf2f6;
+
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+
+    h4, p {
+        font-size: 1.5rem;
+        color: #333;
+    }
+    p {
+        display: none;
+    }
+
+    @media screen and ( max-width: 600px ){
+        p {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
 `
 export const DropdownContent = styled.div`
 
